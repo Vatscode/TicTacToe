@@ -21,16 +21,12 @@ class Main {
             System.out.println();
 
             if (board[row][col] == ' ') {
-                board[row][col] = player; // place the element
+                board[row][col] = player; 
                 gameOver = haveWon(board, player);
                 if (gameOver) {
                     System.out.println("Player " + player + " has won: ");
                 } else {
-                    // if (player == 'X') {
-                    // player = 'O';
-                    // } else {
-                    // player = 'X';
-                    // }
+                   
                     player = (player == 'X') ? 'O' : 'X';
                 }
             } else {
